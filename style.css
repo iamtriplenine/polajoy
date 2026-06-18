@@ -216,37 +216,35 @@ svg{width:20px;height:20px}
   }
 }
 
-
 @media (max-width: 768px) {
   .products-grid {
-    grid-template-columns: repeat(4, 1fr);
-    gap: 6px;
-    overflow: hidden;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 10px;
   }
 
   .product {
-    padding: 8px 4px;
+    padding: 12px 8px;
     min-width: 0;
   }
 
   .product h3 {
-    font-size: 9px;
+    font-size: 12px;
   }
 
   .product .price {
-    font-size: 9px;
+    font-size: 11px;
   }
 
   .product .order {
-    font-size: 8px;
-    padding: 4px 6px;
+    font-size: 10px;
+    padding: 5px 8px;
   }
 
   .product .ph {
-    height: 50px;
+    height: 70px;
   }
 
   .product .cat {
-    font-size: 8px;
+    font-size: 10px;
   }
 }
