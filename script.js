@@ -9,8 +9,8 @@ const ads = [
 ];
 
 const products = [
-  { cat:"Polaroid ", title:"Polaroid Normal · 8", price:"2 000 FCFA", badge:"Best-seller", icon:"polaroid", img:"https://i.postimg.cc/PJB0Z77k/IMG-4457.jpg" },
-  { cat:"Polaroid Moyen", title:"Polaroid Moyen · Pack 10", price:"7 500 FCFA", icon:"polaroid" },
+  { cat:"Polaroid ", title:"Polaroid Normal  8", price:"2 000 FCFA", badge:"", icon:"polaroid", img:"https://i.postimg.cc/PJB0Z77k/IMG-4457.jpg" },
+  { cat:"Polaroid ", title:"Polaroid Grand  4", price:"2 000 FCFA", badge:"", icon:"polaroid", img:"https://i.postimg.cc/cHDp1hGw/edbf0ced-581d-46b6-8d91-5aa753414596.jpg" },
   { cat:"Polaroid Grand", title:"Polaroid Grand · Pack 5", price:"9 000 FCFA", icon:"polaroid" },
   { cat:"Spotify", title:"Polaroid Spotify", price:"2 500 FCFA", badge:"Nouveau", icon:"music" },
   { cat:"Personnalisé", title:"Polaroid Personnalisé", price:"3 000 FCFA", icon:"sparkle" },
