@@ -105,7 +105,7 @@ function renderProducts(cat="Tous"){
     el.className = "product glass reveal";
     el.style.transitionDelay = (i*40)+"ms";
     el.innerHTML = `
-      <div class="ph">${p.badge?`<span class="badge">${p.badge}</span>`:""}${p.img?`<img src="${p.img}" alt="${p.title}" style="width:100%;height:100%;object-fit:cover;border-radius:8px;"/>`:(ICONS[p.icon]||ICONS.image)}</div>
+      <div class="ph">${p.badge?`<span class="badge">${p.badge}</span>`:""}${p.img?`<img src="${p.img}" alt="${p.title}" style="display:block;width:100%;height:100%;object-fit:cover;border-radius:8px;"/>`:(ICONS[p.icon]||ICONS.image)}</div>
       <span class="cat">${p.cat}</span>
       <h3>${p.title}</h3>
       <div class="row"><span class="price">${p.price}</span>
