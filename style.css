@@ -215,3 +215,9 @@ svg{width:20px;height:20px}
     margin-left: auto;
   }
 }
+
+@media (max-width: 768px) {
+  .products-grid {
+    grid-template-columns: repeat(4, 1fr);
+  }
+}
