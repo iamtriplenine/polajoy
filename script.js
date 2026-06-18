@@ -2,21 +2,28 @@
 const WA = "https://wa.me/2250748426112";
 
 const ads = [
-  { tag:"Promo", text:"–20% sur tous les Polaroids Spotify jusqu'à dimanche !" },
+  
   { tag:"Nouveau", text:"Découvrez nos cadres premium en chêne naturel" },
   { tag:"Livraison", text:"Livraison gratuite à Abidjan dès 10 000 FCFA" },
-  { tag:"Pack", text:"Pack 30 Polaroids Mini à 12 000 FCFA seulement" },
+  { tag:"Pack", text:"Pack 40 Polaroids Mini à 3 500 FCFA seulement" },
 ];
 
 const products = [
-  { cat:"Polaroid ", title:"Polaroid Normal  8", price:"2 000 FCFA", badge:"", icon:"polaroid", img:"https://i.postimg.cc/PJB0Z77k/IMG-4457.jpg" },
-  { cat:"Polaroid ", title:"Polaroid Grand  4", price:"2 000 FCFA", badge:"", icon:"polaroid", img:"https://i.postimg.cc/cHDp1hGw/edbf0ced-581d-46b6-8d91-5aa753414596.jpg" },
-  { cat:"Polaroid Grand", title:"Polaroid Grand · Pack 5", price:"9 000 FCFA", icon:"polaroid" },
+  { cat:"Polaroid ", title:"Polaroid Normal  x8", price:"2 000 FCFA", badge:"", icon:"polaroid", img:"https://i.postimg.cc/PJB0Z77k/IMG-4457.jpg" },
+  { cat:"Polaroid ", title:"Polaroid Grand  x4", price:"2 000 FCFA", badge:"", icon:"polaroid", img:"https://i.postimg.cc/cHDp1hGw/edbf0ced-581d-46b6-8d91-5aa753414596.jpg" },
+
+
+
+  { cat:"Cadre ", title:"cadre A4", price:"5 000 FCFA", badge:"", icon:"polaroid", img:"https://i.postimg.cc/RC8kj3Zg/IMG-7147.jpg" },
+  { cat:"Flyer ", title:"Flyer A5  x60", price:"5 000 FCFA", badge:"", icon:"polaroid", img:"https://i.postimg.cc/zf9k5RVL/IMG-7953.jpg" },
+  
+
+
   { cat:"Spotify", title:"Polaroid Spotify", price:"2 500 FCFA", badge:"Nouveau", icon:"music" },
   { cat:"Personnalisé", title:"Polaroid Personnalisé", price:"3 000 FCFA", icon:"sparkle" },
-  { cat:"Flyer", title:"Flyer A5 · 100 ex.", price:"15 000 FCFA", icon:"flyer" },
+  
   { cat:"Affiche", title:"Affiche A3", price:"4 000 FCFA", icon:"poster" },
-  { cat:"Cadre", title:"Cadre Photo Premium", price:"12 000 FCFA", badge:"Premium", icon:"frame" },
+  
   { cat:"Impression", title:"Impression Photo 13×18", price:"800 FCFA", icon:"image" },
   { cat:"Spotify", title:"Spotify XL avec cadre", price:"8 500 FCFA", icon:"music" },
 ];
