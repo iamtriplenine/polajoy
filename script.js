@@ -105,7 +105,6 @@ function renderProducts(cat="Tous"){
     el.className = "product glass reveal";
     el.style.transitionDelay = (i*40)+"ms";
     el.innerHTML = `
-      el.innerHTML = `
       <div class="ph"${p.img?` style="cursor:pointer"`:""}>${p.badge?`<span class="badge">${p.badge}</span>`:""}${p.img?`<img src="${p.img}" alt="${p.title}" style="display:block;width:100%;height:100%;object-fit:cover;border-radius:8px;"/>`:(ICONS[p.icon]||ICONS.image)}</div>
       <span class="cat">${p.cat}</span>
       <h3>${p.title}</h3>
@@ -114,7 +113,7 @@ function renderProducts(cat="Tous"){
           <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
         </button>
       </div>`;
-  if(p.img){ el.querySelector(".ph").onclick = ()=>openLightbox(p.img); }
+    if(p.img){ el.querySelector(".ph").onclick = ()=>openLightbox(p.img); }
     grid.appendChild(el);
   });
   observeReveal();
