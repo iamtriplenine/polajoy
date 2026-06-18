@@ -214,9 +214,7 @@ svg{width:20px;height:20px}
   .nav-actions {
     margin-left: auto;
   }
-}
 
-@media (max-width: 768px) {
   .products-grid {
     grid-template-columns: repeat(2, 1fr);
     gap: 10px;
@@ -246,5 +244,22 @@ svg{width:20px;height:20px}
 
   .product .cat {
     font-size: 10px;
+  }
+
+  .table-wrap {
+    overflow-x: hidden;
+  }
+
+  .pricing {
+    font-size: 9px;
+    min-width: unset;
+    width: 100%;
+  }
+
+  .pricing th,
+  .pricing td {
+    padding: 5px 4px;
+    white-space: normal;
+    word-break: break-word;
   }
 }
