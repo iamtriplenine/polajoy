@@ -1,191 +1,196 @@
 <!DOCTYPE html>
 <html lang="fr">
-    <head>
-        <meta charset="UTF-8">
-    <meta name="viewport" content="=whidth=device-width, initial-scale=1.0">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width,initial-scale=1" />
+<title>PolaJoy</title>
+<meta name="description" content="Polaroids personnalisés, Spotify, impression photo, flyers, affiches et cadres. Créations premium livrées en Côte d'Ivoire." />
+<meta property="og:title" content="PolaroidLab — Capture Happiness, Share Joy" />
+<meta property="og:description" content="Vos souvenirs imprimés avec élégance." />
+<meta property="og:type" content="website" />
+<link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'><rect width='64' height='64' rx='14' fill='%23F58CB6'/><rect x='12' y='10' width='40' height='44' rx='4' fill='white'/><rect x='16' y='14' width='32' height='28' rx='2' fill='%23D8EEF2'/></svg>" />
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css" />
+</head>
+<body>
 
-    <title>Joyce-store</title>
-    <link rel="stylesheet" href="store.css">
-    <link rel="icon" href="https://i.postimg.cc/rpYsJnbG/IMG-7016.png">
-    
-
-    </head>
-
-    <body>
-
-
-        <header>
-            <div class="logo">
-                <img src="https://i.postimg.cc/rpYsJnbG/IMG-7016.png" alt="logo">
-            </div>
-
-
-            <div id="menu-btn" class="hamburger">
-                <span></span>
-                <span></span>
-                <span></span>
-            </div>
-
-            <div id="overlay"></div>
-            <nav id="side-menu">
-                <ul>
-                    <li><a href="#">Acceuil</a></li>
-                    <li><a href="#">Produit</a></li>
-                    <li><a href="#">A propos</a></li>
-                    <li><a href="#">contact</a></li>
-                </ul>
-            </nav>
-
-
-
-
-
-
-
-
-
-
-        </header>
-        <br>
-
-        <main>
-        <h1>Joyce-store</h1>
-        </main>
-        
-
-
-        <div class="slider" id="slider">
-            <img src="https://i.postimg.cc/pTMkprdb/IMG-4450.jpg" alt="img" class="slide">
-            <img src="https://i.postimg.cc/RhBMs7ZN/IMG-4458.jpg" alt="img" class="slide">
-            <img src="https://i.postimg.cc/4xqR268R/IMG-4598.jpg" alt="img" class="slide">
-            <img src="https://i.postimg.cc/B6fNXbv2/IMG_4502.jpg" alt="img" class="slide">
-        </div>
-
-
-
-
-        <div class="pic">
-    <img src="https://i.postimg.cc/KzcfnVtC/IMG_4479.jpg" alt="pic1" class="imgcardre">
-    <h2 class="titre">polaroide</h2>
-    <h5 class="titre2">8 photos format moyens <br>8 photos format moyens </h5>
-    
-    <div class="prix">2000Fcfa</div>
-    <a href="https://wa.me/2250748426112?text=Salut%20je%20veux%20commander%20des%20Polaro%C3%AFd" target="_blank">
-    <button class="buy" onclick="acheter()"> acheter</button>
-    </a>
+<!-- Ambient liquid blobs -->
+<div class="liquid-bg" aria-hidden="true">
+  <span class="blob b1"></span><span class="blob b2"></span><span class="blob b3"></span>
 </div>
 
-
-
-<div class="pic">
-    <img src="https://i.postimg.cc/cHDmTmmL/IMG_4456.jpg" alt="pic1" class="imgcardre">
-    <div class="prix">2000Fcf</div>
-
-    <a href="https://wa.me/2250748426112?text=Salut%20je%20veux%20commander%20des%20Polaro%C3%AFd" target="_blank">
-    <button class="buy" onclick="acheter()"> acheter</button>
-    </a>
-
+<!-- Top ad banner -->
+<div class="ad-banner glass" id="adBanner">
+  <button class="ad-arrow prev" aria-label="Précédent">
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M15 6l-6 6 6 6"/></svg>
+  </button>
+  <div class="ad-track" id="adTrack"></div>
+  <button class="ad-arrow next" aria-label="Suivant">
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 6l6 6-6 6"/></svg>
+  </button>
 </div>
 
+<!-- Header -->
+<header class="nav glass">
+  <a href="#" class="logo">
+    <svg class="logo-icon" viewBox="0 0 64 64"><rect x="6" y="8" width="52" height="48" rx="6" fill="url(#lg)"/><rect x="12" y="14" width="40" height="30" rx="3" fill="#fff"/><defs><linearGradient id="lg" x1="0" x2="1" y1="0" y2="1"><stop offset="0" stop-color="#F58CB6"/><stop offset="1" stop-color="#E85A9A"/></linearGradient></defs></svg>
+    <span>Pola<b>Joy</b></span>
+  </a>
+  <nav class="nav-links" id="navLinks">
+    <a href="#produits">Produits</a>
+    <a href="#tarifs">Tarifs</a>
+    <a href="#creations">Créations</a>
+    <a href="#avis">Avis</a>
+    <a href="#faq">FAQ</a>
+    <a href="#contact">Contact</a>
+  </nav>
+  <div class="nav-actions">
+    <button id="themeBtn" class="icon-btn" aria-label="Mode sombre">
+      <svg class="i-sun" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="4"/><path d="M12 2v2M12 20v2M2 12h2M20 12h2M4.9 4.9l1.4 1.4M17.7 17.7l1.4 1.4M4.9 19.1l1.4-1.4M17.7 6.3l1.4-1.4"/></svg>
+      <svg class="i-moon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 12.8A9 9 0 1 1 11.2 3a7 7 0 0 0 9.8 9.8z"/></svg>
+    </button>
+    <button id="menuBtn" class="icon-btn menu-btn" aria-label="Menu">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 6h18M3 12h18M3 18h18"/></svg>
+    </button>
+  </div>
+</header>
 
-
-<div class="pic">
-    <img src="https://i.postimg.cc/xCsRgRRd/IMG_4407.jpg" alt="pic1" class="imgcardre">
-    <div class="prix">2000Fcf</div>
-
-    <a href="https://wa.me/2250748426112?text=Salut%20je%20veux%20commander%20des%20Polaro%C3%AFd" target="_blank">
-    <button class="buy" onclick="acheter()"> acheter</button>
-    </a>
-
-</div>
-
-
-<div class="pic">
-    <img src="https://i.postimg.cc/9FDx8vs0/IMG_4606.jpg" alt="pic1" class="imgcardre">
-    <h2 class="titre">polaroide</h2>
-    
-    <div class="prix">2000Fcfa</div>
-
-    <a href="https://wa.me/2250748426112?text=Salut%20je%20veux%20commander%20des%20Polaro%C3%AFd" target="_blank">
-    <button class="buy" onclick="acheter()"> acheter</button>
-    </a>
-
-    
-</div>
-
-
-
-
-
-
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-
-
-
-
-
-<footer class="footer">
-  
-  <div class="footer-container">
-
-    <!-- Colonne 1 : Logo + description -->
-    <div class="footer-section">
-      <h2 class="logo">JOYCE STORE</h2>
-      <p>Votre boutique en ligne pour des produits de qualité à prix accessible. Livraisons rapides et service client disponible 7j/7.</p>
+<!-- Hero -->
+<section class="hero">
+  <div class="hero-inner reveal">
+    <span class="kicker glass-mini">✦ Studio d'impression premium</span>
+    <h1>Capture Happiness,<br/><em>Share Joy</em></h1>
+    <p>Vos souvenirs imprimés avec élégance. Polaroids, Spotify, flyers, affiches et cadres — pensés avec soin.</p>
+    <div class="hero-cta">
+      <a href="#produits" class="btn primary">Voir nos créations
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
+      </a>
+      <a href="https://wa.me/2250700000000" class="btn ghost glass" target="_blank" rel="noopener">
+        <svg viewBox="0 0 24 24" fill="currentColor"><path d="M20 3.5A11.5 11.5 0 0 0 3.7 19.8L2 22l2.3-1.6A11.5 11.5 0 1 0 20 3.5zM12 21a9 9 0 0 1-4.6-1.3l-.3-.2-2.4.7.7-2.3-.2-.3A9 9 0 1 1 12 21zm5-6.7c-.3-.1-1.6-.8-1.9-.9-.3-.1-.5-.1-.7.2-.2.2-.7.9-.9 1.1-.2.2-.3.2-.6.1-.3-.1-1.2-.4-2.3-1.4-.9-.8-1.4-1.7-1.6-2-.2-.3 0-.5.1-.6l.5-.5c.1-.2.2-.3.3-.5.1-.2 0-.4 0-.5l-.7-1.6c-.2-.4-.4-.4-.6-.4h-.5c-.2 0-.5.1-.7.3-.2.2-.9.9-.9 2.2 0 1.3 1 2.6 1.1 2.8.1.2 2 3 4.8 4.1.7.3 1.2.5 1.6.6.7.2 1.3.2 1.8.1.5-.1 1.6-.7 1.8-1.3.2-.6.2-1.2.2-1.3-.1-.1-.3-.2-.6-.3z"/></svg>
+        Commander sur WhatsApp
+      </a>
     </div>
-
-    <!-- Colonne 2 : Liens rapides -->
-    <div class="footer-section">
-      <h3>Liens rapides</h3>
-      <ul>
-        <li><a href="#">Accueil</a></li>
-        <li><a href="#">Produits</a></li>
-        <li><a href="#">À propos</a></li>
-        <li><a href="#">Nous contacter</a></li>
-      </ul>
+    <div class="hero-stats">
+      <div><b>+1200</b><span>Clients ravis</span></div>
+      <div><b>+15k</b><span>Polaroids imprimés</span></div>
+      <div><b>4.9★</b><span>Note moyenne</span></div>
     </div>
-
-    <!-- Colonne 3 : Contact -->
-    <div class="footer-section">
-      <h3>Contact</h3>
-      <p><strong>Téléphone :</strong> +225 07 00 00 000</p>
-      <p><strong>Email :</strong> contact@joycestore.ci</p>
-      <p><strong>Adresse :</strong> Abidjan, Côte d'Ivoire</p>
+  </div>
+  <div class="hero-card glass reveal">
+    <div class="polaroid-mock">
+      <div class="polaroid-photo"></div>
+      <p>Souvenir · 2026</p>
     </div>
+    <div class="polaroid-mock alt">
+      <div class="polaroid-photo p2"></div>
+      <p>♫ Spotify Code</p>
+    </div>
+  </div>
+</section>
 
-    <!-- Colonne 4 : Réseaux sociaux -->
-    <div class="footer-section">
-      <h3>Nous suivre</h3>
+<!-- Produits -->
+<section id="produits" class="section">
+  <div class="section-head reveal">
+    <span class="kicker glass-mini">Catalogue</span>
+    <h2>Notre gamme <em>complète</em></h2>
+    <p>Sélectionnez un format, on s'occupe du reste.</p>
+  </div>
+  <div class="filters" id="filters"></div>
+  <div class="products-grid" id="productsGrid"></div>
+</section>
+
+<!-- Tarifs -->
+<section id="tarifs" class="section">
+  <div class="section-head reveal">
+    <span class="kicker glass-mini">Tarifs transparents</span>
+    <h2>Grille <em>tarifaire</em></h2>
+  </div>
+  <div class="table-wrap glass reveal">
+    <table class="pricing">
+      <thead><tr><th>Produit</th><th>Format</th><th>Quantité</th><th>Prix avant</th><th>Prix promo</th></tr></thead>
+      <tbody id="pricingBody"></tbody>
+    </table>
+  </div>
+</section>
+
+<!-- Créations récentes -->
+<section id="creations" class="section">
+  <div class="section-head reveal">
+    <span class="kicker glass-mini">Portfolio</span>
+    <h2>Créations <em>récentes</em></h2>
+  </div>
+  <div class="masonry" id="masonry"></div>
+</section>
+
+<!-- Avis -->
+<section id="avis" class="section">
+  <div class="section-head reveal">
+    <span class="kicker glass-mini">Témoignages</span>
+    <h2>Ils nous <em>adorent</em></h2>
+  </div>
+  <div class="reviews glass" id="reviews"></div>
+</section>
+
+<!-- FAQ -->
+<section id="faq" class="section">
+  <div class="section-head reveal">
+    <span class="kicker glass-mini">Questions</span>
+    <h2>FAQ</h2>
+  </div>
+  <div class="faq-list" id="faqList"></div>
+</section>
+
+<!-- Contact -->
+<section id="contact" class="section">
+  <div class="section-head reveal">
+    <span class="kicker glass-mini">Contact</span>
+    <h2>Discutons de votre <em>projet</em></h2>
+  </div>
+  <div class="contact-card glass reveal">
+    <div class="contact-info">
+      <a href="tel:+2250700000000"><span class="ci-icn"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.9v3a2 2 0 0 1-2.2 2 19.8 19.8 0 0 1-8.6-3 19.5 19.5 0 0 1-6-6 19.8 19.8 0 0 1-3-8.6A2 2 0 0 1 4.1 2h3a2 2 0 0 1 2 1.7c.1.9.4 1.8.7 2.6a2 2 0 0 1-.5 2.1L8 9.6a16 16 0 0 0 6 6l1.2-1.2a2 2 0 0 1 2.1-.5c.8.3 1.7.6 2.6.7a2 2 0 0 1 1.7 2z"/></svg></span><div><b>Téléphone</b><span>+225 07 00 00 00 00</span></div></a>
+      <a href="https://wa.me/2250700000000" target="_blank" rel="noopener"><span class="ci-icn"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M20 3.5A11.5 11.5 0 0 0 3.7 19.8L2 22l2.3-1.6A11.5 11.5 0 1 0 20 3.5z"/></svg></span><div><b>WhatsApp</b><span>Réponse en moins d'1h</span></div></a>
+      <a href="mailto:hello@polaroidlab.ci"><span class="ci-icn"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="m3 7 9 6 9-6"/></svg></span><div><b>Email</b><span>hello@polaroidlab.ci</span></div></a>
       <div class="socials">
-        <a href="#">🌐</a>
-        <a href="#">📘</a>
-        <a href="#">📸</a>
-        <a href="#">▶️</a>
+        <a href="#" aria-label="Instagram"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r="1" fill="currentColor"/></svg></a>
+        <a href="#" aria-label="TikTok"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M16 3v3a5 5 0 0 0 5 5v3a8 8 0 0 1-5-1.7V16a6 6 0 1 1-6-6v3a3 3 0 1 0 3 3V3z"/></svg></a>
+        <a href="#" aria-label="Facebook"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M13 22v-8h3l1-4h-4V7.5c0-1.1.4-2 2-2h2V2h-3c-3 0-5 1.8-5 5v3H6v4h3v8z"/></svg></a>
       </div>
     </div>
-
+    <form class="contact-form" onsubmit="event.preventDefault(); window.open('https://wa.me/2250700000000?text=' + encodeURIComponent(this.msg.value), '_blank');">
+      <label>Votre nom<input required name="name" placeholder="Marie K."/></label>
+      <label>Email<input required type="email" name="email" placeholder="vous@email.com"/></label>
+      <label>Votre projet<textarea required name="msg" rows="4" placeholder="Décrivez vos envies..."></textarea></label>
+      <button class="btn primary" type="submit">Envoyer
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 2 11 13M22 2l-7 20-4-9-9-4z"/></svg>
+      </button>
+    </form>
   </div>
+</section>
 
-  <div class="footer-bottom">
-    © <span id="year"></span> Joyce Store — Tous droits réservés.
+<!-- Footer -->
+<footer class="footer">
+  <div class="foot-grid">
+    <div>
+      <a href="#" class="logo"><svg class="logo-icon" viewBox="0 0 64 64"><rect x="6" y="8" width="52" height="48" rx="6" fill="#F58CB6"/><rect x="12" y="14" width="40" height="30" rx="3" fill="#fff"/></svg><span>Polaroid<b>Lab</b></span></a>
+      <p>Studio d'impression premium. Abidjan, Côte d'Ivoire.</p>
+    </div>
+    <div><h4>Navigation</h4><a href="#produits">Produits</a><a href="#tarifs">Tarifs</a><a href="#faq">FAQ</a><a href="#contact">Contact</a></div>
+    <div><h4>Suivez-nous</h4><a href="#">Instagram</a><a href="#">TikTok</a><a href="#">Facebook</a></div>
   </div>
-
+  <div class="copy">© <span id="year"></span> PolaroidLab — Tous droits réservés.</div>
 </footer>
 
+<!-- Lightbox -->
+<div class="lightbox" id="lightbox" aria-hidden="true"><button class="lb-close" aria-label="Fermer">×</button><img alt=""/></div>
 
+<!-- WhatsApp floating bubble -->
+<button class="wa-bubble" id="waBubble" aria-label="WhatsApp">
+  <svg viewBox="0 0 24 24" fill="white"><path d="M20 3.5A11.5 11.5 0 0 0 3.7 19.8L2 22l2.3-1.6A11.5 11.5 0 1 0 20 3.5zM12 21a9 9 0 0 1-4.6-1.3l-.3-.2-2.4.7.7-2.3-.2-.3A9 9 0 1 1 12 21zm5-6.7c-.3-.1-1.6-.8-1.9-.9-.3-.1-.5-.1-.7.2-.2.2-.7.9-.9 1.1-.2.2-.3.2-.6.1-.3-.1-1.2-.4-2.3-1.4-.9-.8-1.4-1.7-1.6-2-.2-.3 0-.5.1-.6l.5-.5c.1-.2.2-.3.3-.5.1-.2 0-.4 0-.5l-.7-1.6c-.2-.4-.4-.4-.6-.4h-.5c-.2 0-.5.1-.7.3-.2.2-.9.9-.9 2.2 0 1.3 1 2.6 1.1 2.8.1.2 2 3 4.8 4.1.7.3 1.2.5 1.6.6.7.2 1.3.2 1.8.1.5-.1 1.6-.7 1.8-1.3.2-.6.2-1.2.2-1.3-.1-.1-.3-.2-.6-.3z"/></svg>
+</button>
 
-
-
-
-<script src="store.js"></script>
-    </body>
-
+<script src="script.js"></script>
+</body>
 </html>
