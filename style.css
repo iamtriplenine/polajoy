@@ -239,7 +239,7 @@ svg{width:20px;height:20px}
   }
 
   .product .ph {
-    height: auto;
+    height: 100px;
   }
 
   .product .cat {
@@ -276,7 +276,7 @@ svg{width:20px;height:20px}
 
   .ph img {
     width: 100%;
-    height: 100px;
+    height: 100%;
     object-fit: cover;
     border-radius: 8px;
     display: block;
