@@ -214,52 +214,6 @@ svg{width:20px;height:20px}
   .nav-actions {
     margin-left: auto;
   }
-
-  .products-grid {
-    grid-template-columns: repeat(2, 1fr);
-    gap: 10px;
-  }
-
-  .product {
-    padding: 12px 8px;
-    min-width: 0;
-  }
-
-  .product h3 {
-    font-size: 12px;
-  }
-
-  .product .price {
-    font-size: 11px;
-  }
-
-  .product .order {
-    font-size: 10px;
-    padding: 5px 8px;
-  }
-
-  .product .ph {
-    height: 100px;
-  }
-
-  .product .cat {
-    font-size: 10px;
-  }
-
-  .table-wrap {
-    overflow-x: auto;
-  }
-
-  .pricing {
-    font-size: 11px;
-    min-width: 500px;
-  }
-
-  .pricing th,
-  .pricing td {
-    padding: 6px 8px;
-    white-space: nowrap;
-  }
 }
 
 @media (max-width: 768px) {
