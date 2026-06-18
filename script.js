@@ -1,5 +1,5 @@
 // ---------- DATA ----------
-const WA = "https://wa.me/2250700000000";
+const WA = "https://wa.me/2250748426112";
 
 const ads = [
   { tag:"Promo", text:"–20% sur tous les Polaroids Spotify jusqu'à dimanche !" },
