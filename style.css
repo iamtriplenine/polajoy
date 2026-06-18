@@ -209,3 +209,9 @@ svg{width:20px;height:20px}
   .pricing th,.pricing td{padding:.7rem .8rem;font-size:.8rem}
   .ad-slide{font-size:.85rem;padding:0 50px}
 }
+
+@media (max-width: 768px) {
+  .nav-actions {
+    margin-left: auto;
+  }
+}
