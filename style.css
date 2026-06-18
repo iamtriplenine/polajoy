@@ -216,8 +216,37 @@ svg{width:20px;height:20px}
   }
 }
 
+
 @media (max-width: 768px) {
   .products-grid {
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: repeat(4, 1fr);
+    gap: 6px;
+    overflow: hidden;
+  }
+
+  .product {
+    padding: 8px 4px;
+    min-width: 0;
+  }
+
+  .product h3 {
+    font-size: 9px;
+  }
+
+  .product .price {
+    font-size: 9px;
+  }
+
+  .product .order {
+    font-size: 8px;
+    padding: 4px 6px;
+  }
+
+  .product .ph {
+    height: 50px;
+  }
+
+  .product .cat {
+    font-size: 8px;
   }
 }
