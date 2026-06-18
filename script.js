@@ -9,7 +9,7 @@ const ads = [
 ];
 
 const products = [
-  { cat:"Polaroid Mini", title:"Polaroid Mini · Pack 10", price:"4 500 FCFA", badge:"Best-seller", icon:"polaroid" },
+  { cat:"Polaroid ", title:"Polaroid Normal · 8", price:"2 000 FCFA", badge:"Best-seller", icon:"polaroid", img:"https://i.postimg.cc/PJB0Z77k/IMG-4457.jpg" },
   { cat:"Polaroid Moyen", title:"Polaroid Moyen · Pack 10", price:"7 500 FCFA", icon:"polaroid" },
   { cat:"Polaroid Grand", title:"Polaroid Grand · Pack 5", price:"9 000 FCFA", icon:"polaroid" },
   { cat:"Spotify", title:"Polaroid Spotify", price:"2 500 FCFA", badge:"Nouveau", icon:"music" },
@@ -22,16 +22,18 @@ const products = [
 ];
 
 const pricing = [
-  ["Polaroid Mini","6×8 cm","Pack 10","6 000","4 500"],
-  ["Polaroid Moyen","8×10 cm","Pack 10","9 000","7 500"],
-  ["Polaroid Grand","10×15 cm","Pack 5","12 000","9 000"],
-  ["Polaroid Spotify","8×12 cm","Unité","3 500","2 500"],
-  ["Polaroid Personnalisé","8×10 cm","Unité","4 000","3 000"],
-  ["Flyer A5","148×210 mm","100 ex.","18 000","15 000"],
-  ["Affiche A3","297×420 mm","Unité","5 000","4 000"],
-  ["Cadre Premium","20×25 cm","Unité","15 000","12 000"],
-  ["Impression Photo","13×18 cm","Unité","1 000","800"],
+  ["Polaroïd simple","Mini","20","2 000","1 300"],
+  ["Polaroïd simple","Moyen","8","2 000","1 300"],
+  ["Polaroïd simple","Grand","4","2 500","1 625"],
+  ["Polaroïd personnalisable","Grand","4","3 000","1 950"],
+  ["Polaroïd Spotify","Mini","15","2 000","1 300"],
+  ["Polaroïd Spotify","Moyen","8","2 000","1 300"],
+  ["Polaroïd Spotify","Grand","4","3 000","1 950"],
+  ["Cadres","A4","1","5 000","3 250"],
+  ["Cadres","A3","1","8 000","5 200"],
+  ["Poster","A5","2","2 000","1 300"],
 ];
+
 
 const gallery = [
   ["#F58CB6","#D8EEF2",1.2],["#E85A9A","#F58CB6",1.0],["#D8EEF2","#E85A9A",1.5],
@@ -103,7 +105,7 @@ function renderProducts(cat="Tous"){
     el.className = "product glass reveal";
     el.style.transitionDelay = (i*40)+"ms";
     el.innerHTML = `
-      <div class="ph">${p.badge?`<span class="badge">${p.badge}</span>`:""}${ICONS[p.icon]||ICONS.image}</div>
+      <div class="ph">${p.badge?`<span class="badge">${p.badge}</span>`:""}${p.img?`<img src="${p.img}" alt="${p.title}" style="width:100%;height:100%;object-fit:cover;border-radius:8px;"/>`:(ICONS[p.icon]||ICONS.image)}</div>
       <span class="cat">${p.cat}</span>
       <h3>${p.title}</h3>
       <div class="row"><span class="price">${p.price}</span>
