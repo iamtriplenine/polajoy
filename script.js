@@ -1,3 +1,14 @@
+
+// ---------- ROUTER ----------
+const urlParam = new URLSearchParams(window.location.search).get('p');
+if (urlParam) {
+  fetch(`clients/${urlParam}.html`)
+    .then(r => { if(!r.ok) throw new Error(); return r.text(); })
+    .then(html => { document.open(); document.write(html); document.close(); })
+    .catch(() => { document.body.innerHTML = '<div style="display:grid;place-items:center;height:100vh;font-family:serif;font-size:2rem">Page introuvable 🌸</div>'; });
+  throw new Error("stop"); // stoppe le reste du script
+}
+
 // ---------- DATA ----------
 const WA = "https://wa.me/2250748426112";
 
